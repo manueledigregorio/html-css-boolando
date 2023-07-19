@@ -1,5 +1,40 @@
+/***********GENERALI************/ 
 *{
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+ul{
+    list-style:none ;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.background{
+    background-color: #FF6801;
+    height: 80px;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.flex{
+    justify-content: space-between;
+    align-items: center;
+}
+/***********GENERALI************/ 
+
+.logo{
+  width: 200px;  
 }
