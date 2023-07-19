@@ -20,21 +20,49 @@ a{
 
 .background{
     background-color: #FF6801;
+    
+}
+header div{
     height: 80px;
+}
+
+li{
+    margin-right: 15px;
 }
 
 .container{
     width: 80%;
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 1200px;
 }
 
 .flex{
+    display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center
 }
 /***********GENERALI************/ 
 
 .logo{
-  width: 200px;  
+  width: 200px; 
+  display: flex; 
+  align-self: center;
+}
+
+.column-1{
+    display: flex;
+    align-items: center;
+    
+}
+
+.colunm-2{
+    display: flex;
+    align-items: center;
+
+}
+
+
+.column-3{
+    display: flex;
+    align-items: center;
 }
