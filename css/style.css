@@ -29,6 +29,19 @@ header div{
 li{
     margin-right: 15px;
 }
+main{
+    margin: 50px;
+}
+
+ main img {
+    max-width: 300px;
+    
+ }
+ main div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
 
 .container{
     width: 80%;
@@ -42,7 +55,7 @@ li{
     align-items: center
 }
 /***********GENERALI************/ 
-
+/***********HEADER*************/
 .logo{
   width: 200px; 
   display: flex; 
@@ -61,8 +74,25 @@ li{
 
 }
 
-
 .column-3{
     display: flex;
     align-items: center;
+}
+
+/***********FINE HEADER***********/
+
+.product{
+    position: relative;
+    cursor: pointer;
+    margin: 20px 10px;
+
+}
+
+.switch{
+    position: absolute;
+    display: none;
+}
+
+.product:hover .switch {
+    display: block;
 }
