@@ -20,27 +20,27 @@ a{
 
 .background{
     background-color: #FF6801;
-    
+    z-index: 999;
+    position: fixed;
+    width: 100%;
 }
 header div{
     height: 80px;
 }
 
+main{
+    padding-top:150px ;
+}
+
 li{
     margin-right: 15px;
 }
-main{
-    margin: 50px;
-}
 
- main img {
-    max-width: 300px;
-    
- }
- main div{
+ .flex-box{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+   
  }
 
 .container{
@@ -52,7 +52,11 @@ main{
 .flex{
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+}
+
+.wrap{
+    flex-wrap: wrap;
 }
 /***********GENERALI************/ 
 /***********HEADER*************/
@@ -62,37 +66,89 @@ main{
   align-self: center;
 }
 
-.column-1{
-    display: flex;
-    align-items: center;
-    
-}
-
-.colunm-2{
-    display: flex;
-    align-items: center;
-
-}
-
-.column-3{
-    display: flex;
-    align-items: center;
+.menù li{
+    display: inline;
 }
 
 /***********FINE HEADER***********/
+/**********MAIN************/
 
 .product{
     position: relative;
+    width:calc(100% / 3.1);
+    margin-bottom: 50px;
+}
+
+.modello{
+    width: 100%;
+    height: auto;
     cursor: pointer;
-    margin: 20px 10px;
-
 }
 
-.switch{
-    position: absolute;
+.switch:hover .modello.uno{
     display: none;
+
+}
+.switch:hover .modello.due{
+    display: block;
 }
 
-.product:hover .switch {
+.modello.uno {
     display: block;
+}
+
+.modello.due{
+    display:none ;
+}
+
+.lable{
+    position: absolute;
+    bottom: 120px;
+    left:0px;
+    color: white;
+    font-size: 0,8rem;
+
+}
+
+.discount{
+    background-color: red;
+    padding: 3px 3px;
+    
+}
+.green{
+    background-color: green;
+    padding: 3px 5px;
+}
+
+.hearts{
+    position: absolute;
+    top:10px;
+    right: 0px;
+    padding: 5px 5px;
+    background-color: white;
+}
+
+.euro-red{
+    color: red;
+}
+
+.euro-bar{
+    text-decoration: line-through;
+}
+
+footer{
+    background-color: black;
+    padding-top:40px ;
+    padding-bottom: 30px;
+    color: white;
+}
+
+footer  div.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+footer ul{
+    display: flex;
 }
